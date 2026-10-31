@@ -1,0 +1,769 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}body{margin:0}[hidden]{display:none!important}img{max-width:100%}</style>
+</head>
+<body>
+<title>Sekolah Bisnis Digital Lamongan</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Sekolah berasrama di Lamongan untuk remaja berbakat sepak bola: latihan terjadwal, Paket C setara SMA/SMK, dan kelas bisnis digital & AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout: jersey-number headlines on Biru Samudra bands, white reading sections, pitch-line drawings instead of stock photos. Single brand look (light), per Brand Guideline v1.0. */
+:root{
+  --biru:#0F4A66;      /* Biru Samudra: latar utama, judul */
+  --biru2:#1C6182;     /* Biru Buku: latar kedua */
+  --oranye:#EB8A1A;    /* Oranye Semangat: garis, pita, tombol */
+  --oranye-gelap:#A34F00; /* teks oranye kecil di latar putih */
+  --hijau:#548235;     /* Hijau Daun: ikon, pertumbuhan */
+  --tinta:#14232C;     /* teks isi; teks di atas oranye */
+  --putih:#FFFFFF;
+  --kabut:#EEF3F6;     /* netral kebiruan */
+  --garis:#D5E0E7;
+  --wa:#1FA855;
+  --f-judul:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --f-isi:"Source Sans 3",Arial,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+img{height:auto}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--putih);color:var(--tinta);font-family:var(--f-isi);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--biru)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--oranye);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-judul);font-weight:800;text-transform:uppercase;line-height:.95;letter-spacing:.005em;text-wrap:balance;margin:0}
+h2{font-size:clamp(2.4rem,6vw,3.8rem)}
+h3{font-size:1.7rem;font-weight:700;line-height:1.05}
+p{margin:0}
+.eyebrow{font-family:var(--f-judul);font-weight:700;font-size:1rem;letter-spacing:.22em;text-transform:uppercase;color:var(--oranye-gelap)}
+.on-blue .eyebrow{color:var(--oranye)}
+.lead{font-size:1.2rem;max-width:62ch}
+
+/* ---------- header ---------- */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--biru);color:var(--putih);border-bottom:4px solid var(--oranye)}
+.top .wrap{display:flex;align-items:center;gap:16px;padding-block:10px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:0}
+.logo-box{background:var(--putih);border-radius:10px;padding:5px;flex:none;display:grid;place-items:center}
+.logo-box img{width:44px;height:44px;display:block}
+.brand-name{display:flex;align-items:center;gap:12px;min-width:0}
+.brand-name .sep{width:2px;align-self:stretch;background:rgba(255,255,255,.35)}
+.brand-name b{font-family:var(--f-judul);font-weight:800;font-size:1.3rem;line-height:1;letter-spacing:.04em;display:block}
+.brand-name small{font-size:.8rem;opacity:.8;letter-spacing:.06em}
+nav.menu{margin-left:auto;display:flex;gap:4px;align-items:center}
+nav.menu a{font-family:var(--f-judul);font-weight:700;font-size:1.05rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:8px 12px;border-radius:6px}
+nav.menu a:hover{background:rgba(255,255,255,.1)}
+nav.menu a.is-on{box-shadow:inset 0 -3px 0 var(--oranye)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--f-judul);font-weight:800;font-size:1.25rem;letter-spacing:.05em;text-transform:uppercase;text-decoration:none;border-radius:8px;padding:14px 22px;border:0;cursor:pointer;line-height:1}
+.btn svg{width:22px;height:22px;flex:none}
+.btn-oranye{background:var(--oranye);color:var(--tinta)}
+.btn-oranye:hover{background:#F39B33}
+.btn-garis{background:transparent;color:var(--putih);box-shadow:inset 0 0 0 2px rgba(255,255,255,.6)}
+.btn-garis:hover{box-shadow:inset 0 0 0 2px var(--putih)}
+.btn-wa{background:var(--wa);color:var(--putih)}
+.btn-wa:hover{background:#178f47}
+.top .btn{font-size:1.05rem;padding:10px 14px}
+@media (max-width:860px){nav.menu a:not(.btn){display:none}.brand-name small{display:none}}
+@media (max-width:420px){.brand-name .sep,.brand-name b{display:none}}
+
+/* ---------- views ---------- */
+.view[hidden]{display:none!important}
+
+/* ---------- hero ---------- */
+.hero{background:var(--biru);color:var(--putih);position:relative;overflow:hidden}
+.hero .wrap{position:relative;padding-block:clamp(48px,8vw,96px) clamp(40px,6vw,72px);display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:40px;align-items:center}
+.hero h1{font-size:clamp(3.2rem,9vw,6.4rem);line-height:.86}
+.hero h1 .o{color:var(--oranye);display:block}
+.hero p.sub{margin-top:24px;font-size:1.25rem;max-width:40ch;color:#DCE8EF}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.pitch{position:absolute;inset:0;pointer-events:none;opacity:.14}
+.pitch svg{width:100%;height:100%}
+.hero-foto{margin:0;position:relative;justify-self:stretch}
+.hero-foto img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center;display:block;border-radius:6px;border:6px solid var(--putih);box-shadow:0 24px 50px rgba(0,0,0,.3);transform:rotate(1.5deg)}
+.hero-foto .kecil{position:absolute;left:-28px;bottom:-22px;width:46%;aspect-ratio:4/3;transform:rotate(-4deg)}
+.hero-foto figcaption{position:absolute;right:-6px;top:18px;background:var(--oranye);color:var(--tinta);font-family:var(--f-judul);font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:4px;font-size:.95rem}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr}.hero-foto{max-width:520px}.hero-foto img{aspect-ratio:16/10}.hero-foto .kecil{display:none}.hero-foto figcaption{right:10px}}
+/* foto umum */
+.foto{margin:0;display:grid;gap:8px;min-width:0}
+.foto img{width:100%;max-width:100%;display:block;object-fit:cover;border-radius:12px;background:var(--kabut)}
+.foto figcaption{font-size:.92rem;color:#40525C}
+.pilar .foto img{aspect-ratio:16/10;border-radius:8px}
+/* galeri kehidupan asrama */
+.galeri{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));grid-auto-rows:170px;gap:12px}
+.galeri figure{margin:0;position:relative;overflow:hidden;border-radius:12px;min-width:0}
+.galeri img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.galeri figure:hover img{transform:scale(1.04)}
+.galeri figcaption{position:absolute;left:10px;bottom:10px;background:var(--putih);color:var(--tinta);font-family:var(--f-judul);font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:1rem;padding:5px 10px;border-radius:4px}
+.g1{grid-column:span 3;grid-row:span 2}.g2{grid-column:span 3;grid-row:span 2}
+.g3{grid-column:span 2;grid-row:span 2}.g4{grid-column:span 2;grid-row:span 2}.g5{grid-column:span 2;grid-row:span 2}
+@media (max-width:760px){.galeri{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:150px}.g1,.g2{grid-column:span 2;grid-row:span 2}.g3,.g4{grid-column:span 1;grid-row:span 2}.g5{grid-column:span 2;grid-row:span 2}}
+.lp-foto{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:36px}
+.lp-foto img{aspect-ratio:4/3}
+@media (max-width:640px){.lp-foto{grid-template-columns:1fr}}
+.stripe{display:grid;grid-template-columns:1fr 1fr 1fr;height:8px}
+.stripe i:nth-child(1){background:var(--biru2)}.stripe i:nth-child(2){background:var(--oranye)}.stripe i:nth-child(3){background:var(--hijau)}
+
+/* fact bar */
+.facts{background:var(--biru2);color:var(--putih)}
+.facts .wrap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));padding-block:0}
+.fact{padding:22px 20px;border-left:1px solid rgba(255,255,255,.18);min-width:0}
+.fact:first-child{border-left:0;padding-left:0}
+.fact b{font-family:var(--f-judul);font-size:2rem;font-weight:800;text-transform:uppercase;display:block;line-height:1}
+.fact span{font-size:.98rem;color:#D3E3EC}
+@media (max-width:640px){.facts .wrap{grid-template-columns:1fr}.fact{border-left:0;border-top:1px solid rgba(255,255,255,.18);padding-left:0}.fact:first-child{border-top:0}}
+
+/* sections */
+section.blok{padding-block:clamp(56px,8vw,96px)}
+.blok-head{display:grid;gap:14px;margin-bottom:40px;max-width:760px}
+.on-blue{background:var(--biru);color:var(--putih)}
+.on-blue .lead{color:#DCE8EF}
+.on-kabut{background:var(--kabut)}
+
+/* tentang */
+.tentang{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:start}
+.visi{background:var(--biru);color:var(--putih);border-radius:14px;padding:28px}
+.visi .eyebrow{color:var(--oranye)}
+.visi p{font-family:var(--f-judul);font-weight:700;font-size:1.9rem;line-height:1.08;margin-top:10px;text-transform:uppercase}
+.misi{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:14px}
+.misi li{display:grid;grid-template-columns:36px minmax(0,1fr);gap:12px;align-items:start}
+.misi li b{font-family:var(--f-judul);font-size:1.6rem;color:var(--oranye-gelap);line-height:1.1}
+@media (max-width:860px){.tentang{grid-template-columns:1fr}}
+
+/* pilar */
+.pilar-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.pilar{background:var(--putih);border-top:6px solid var(--c);border-radius:4px 4px 14px 14px;padding:28px 24px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.pilar .no{font-family:var(--f-judul);font-weight:800;font-size:4.2rem;line-height:.8;color:var(--c)}
+.pilar ul{margin:0;padding-left:18px;display:grid;gap:6px;font-size:1rem}
+.pilar .ico{width:44px;height:44px;color:var(--c)}
+@media (max-width:860px){.pilar-grid{grid-template-columns:1fr}}
+
+/* pelatih + asrama */
+.duo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}
+.kartu{border:1px solid var(--garis);border-radius:14px;padding:28px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.angka-besar{font-family:var(--f-judul);font-weight:800;font-size:5rem;line-height:.85;color:var(--biru)}
+.angka-besar small{font-size:1.4rem;color:var(--tinta);letter-spacing:.02em}
+.kartu dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 18px;margin:0;font-size:1rem}
+.kartu dt{font-weight:700;color:var(--biru)}
+.kartu dd{margin:0}
+@media (max-width:860px){.duo{grid-template-columns:1fr}}
+
+/* untuk siapa */
+.cocok{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}
+.cocok > div{border-radius:14px;padding:26px;min-width:0}
+.ya{background:var(--putih);border:2px solid var(--hijau)}
+.tidak{background:var(--kabut)}
+.cocok h3{font-size:1.5rem;margin-bottom:12px}
+.cocok ul{margin:0;padding:0;list-style:none;display:grid;gap:10px;font-size:1rem}
+.cocok li{display:grid;grid-template-columns:22px minmax(0,1fr);gap:10px}
+.cocok li svg{width:20px;height:20px;margin-top:4px}
+@media (max-width:760px){.cocok{grid-template-columns:1fr}}
+
+/* alur */
+.alur{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;counter-reset:a;position:relative}
+.alur li{position:relative;padding:0 18px 0 0;min-width:0}
+.alur .bola{width:64px;height:64px;border-radius:50%;background:var(--oranye);color:var(--tinta);display:grid;place-items:center;font-family:var(--f-judul);font-weight:800;font-size:2rem;position:relative;z-index:1}
+.alur li::before{content:"";position:absolute;top:31px;left:64px;right:0;height:2px;background:repeating-linear-gradient(90deg,var(--c-alur,rgba(255,255,255,.5)) 0 8px,transparent 8px 14px)}
+.alur li:last-child::before{display:none}
+.alur h3{margin-top:16px;font-size:1.6rem}
+.alur p{margin-top:6px;font-size:1rem;opacity:.9}
+@media (max-width:760px){.alur{grid-template-columns:1fr;gap:26px}.alur li{display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;padding:0}.alur li::before{top:64px;left:31px;width:2px;height:calc(100% - 38px);right:auto;background:repeating-linear-gradient(180deg,var(--c-alur,rgba(255,255,255,.5)) 0 8px,transparent 8px 14px)}.alur h3{margin-top:4px}}
+.kuota{margin-top:36px;display:inline-flex;gap:10px;align-items:center;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:8px 18px;font-weight:600}
+.kuota i{width:10px;height:10px;border-radius:50%;background:var(--oranye)}
+
+/* biaya + info ortu */
+.biaya-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px}
+.biaya{background:var(--biru);color:var(--putih);border-radius:14px;padding:30px;display:flex;flex-direction:column;gap:16px}
+.biaya h3{font-size:2.4rem}
+.termasuk{list-style:none;padding:0;margin:0;display:grid;gap:8px}
+.termasuk li{display:flex;gap:10px;align-items:center}
+.termasuk li::before{content:"";width:10px;height:10px;background:var(--oranye);border-radius:2px;flex:none}
+.termasuk li.x{opacity:.75}
+.termasuk li.x::before{background:transparent;border:2px solid #9DB7C5}
+.info-ortu{border:2px solid var(--biru);border-radius:14px;padding:30px;display:flex;flex-direction:column;gap:14px}
+.info-ortu ul{margin:0;padding:0;list-style:none;display:grid;gap:14px}
+.info-ortu li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px;align-items:start;font-size:1rem}
+.tag{font-family:var(--f-judul);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:.85rem;padding:3px 8px;border-radius:4px;white-space:nowrap;margin-top:2px}
+.tag.ok{background:#E3EFDB;color:#2F5A16}
+.tag.proses{background:#FCE9D2;color:var(--oranye-gelap)}
+.tag.info{background:var(--kabut);color:var(--biru)}
+@media (max-width:860px){.biaya-grid{grid-template-columns:1fr}}
+
+/* FAQ */
+.faq{display:grid;gap:10px;max-width:860px}
+.faq details{background:var(--putih);border:1px solid var(--garis);border-radius:10px}
+.faq summary{cursor:pointer;list-style:none;padding:18px 54px 18px 20px;font-weight:700;font-size:1.1rem;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);font-family:var(--f-judul);font-size:2rem;color:var(--oranye-gelap);line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq .jawab{padding:0 20px 20px;font-size:1rem;display:grid;gap:8px}
+
+/* lokasi + CTA bawah */
+.lokasi{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:stretch}
+.peta{background:var(--kabut);border-radius:14px;position:relative;overflow:hidden;min-height:220px;display:flex;align-items:flex-end;padding:22px}
+.peta svg.bg{position:absolute;inset:0;width:100%;height:100%}
+.peta a{position:relative}
+@media (max-width:760px){.lokasi{grid-template-columns:1fr}}
+.cta-akhir{background:var(--oranye);color:var(--tinta)}
+.cta-akhir .wrap{padding-block:clamp(48px,7vw,80px);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:center}
+.cta-akhir h2{font-size:clamp(2.6rem,7vw,4.6rem)}
+.cta-akhir p{margin-top:12px;font-size:1.15rem;max-width:52ch}
+.nomor{display:flex;flex-direction:column;gap:10px;align-items:stretch}
+.nomor .btn-wa{font-size:1.5rem;padding:18px 26px}
+.salin{display:flex;align-items:center;justify-content:center;gap:10px;font-weight:700;font-size:1.05rem;user-select:all}
+.salin button{font:inherit;font-size:.85rem;font-weight:700;background:var(--tinta);color:var(--putih);border:0;border-radius:6px;padding:5px 10px;cursor:pointer;user-select:none}
+@media (max-width:760px){.cta-akhir .wrap{grid-template-columns:1fr}}
+
+footer{background:var(--tinta);color:#B9C8D1;font-size:.95rem}
+footer .wrap{padding-block:32px;display:flex;flex-wrap:wrap;gap:18px 40px;justify-content:space-between}
+footer b{color:var(--putih)}
+
+/* floating WA */
+.wa-float{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:70;background:var(--wa);color:var(--putih);border-radius:999px;display:flex;align-items:center;gap:10px;padding:12px 18px 12px 14px;text-decoration:none;font-family:var(--f-judul);font-weight:800;font-size:1.15rem;letter-spacing:.04em;text-transform:uppercase;box-shadow:0 10px 24px rgba(20,35,44,.3)}
+.wa-float svg{width:28px;height:28px}
+@media (max-width:480px){.wa-float span{display:none}.wa-float{padding:14px}}
+
+/* ---------- landing page seleksi ---------- */
+.lp-hero{background:var(--biru);color:var(--putih);position:relative;overflow:hidden}
+.lp-hero .wrap{position:relative;padding-block:clamp(44px,7vw,84px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,440px);gap:40px;align-items:start}
+.pita{display:inline-block;background:var(--oranye);color:var(--tinta);font-family:var(--f-judul);font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding:6px 14px;border-radius:4px;font-size:1.05rem}
+.lp-hero h1{font-size:clamp(3.6rem,11vw,7rem);line-height:.86;margin-top:18px}
+.lp-hero h1 span{color:var(--oranye)}
+.lp-hero .sub{margin-top:20px;font-size:1.2rem;color:#DCE8EF;max-width:44ch}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.chips span{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:6px 14px;font-weight:600;font-size:.98rem}
+.formulir{background:var(--putih);color:var(--tinta);border-radius:16px;padding:26px;display:grid;gap:14px;box-shadow:0 24px 50px rgba(0,0,0,.25)}
+.formulir h2{font-size:2.1rem;color:var(--biru)}
+.formulir p.kecil{font-size:.95rem;color:#40525C}
+.field{display:grid;gap:6px}
+.field label{font-weight:700;font-size:.98rem}
+.field input,.field select{font:inherit;font-size:1rem;padding:12px 14px;border:1.5px solid var(--garis);border-radius:8px;background:var(--putih);color:var(--tinta);width:100%}
+.field input:focus,.field select:focus{border-color:var(--biru);outline:none;box-shadow:0 0 0 3px rgba(15,74,102,.15)}
+.dua{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.formulir .btn-wa{width:100%;font-size:1.35rem;padding:16px}
+.pratinjau{font-size:.88rem;background:var(--kabut);border-radius:8px;padding:10px 12px;white-space:pre-wrap;color:#33454F;max-height:120px;overflow:auto}
+@media (max-width:900px){.lp-hero .wrap{grid-template-columns:1fr}}
+@media (max-width:380px){.dua{grid-template-columns:1fr}}
+
+.dapat{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.dapat > div{border-top:4px solid var(--c);padding-top:16px;display:grid;gap:8px;align-content:start;min-width:0}
+.dapat h3{font-size:1.45rem}
+.dapat p{font-size:1rem}
+@media (max-width:900px){.dapat{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.dapat{grid-template-columns:1fr}}
+
+.jujur{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:40px;align-items:start}
+.jujur blockquote{margin:0;font-family:var(--f-judul);font-weight:800;text-transform:uppercase;font-size:clamp(2rem,4.5vw,3rem);line-height:1;color:var(--biru)}
+.jujur blockquote span{color:var(--oranye-gelap)}
+.jujur ul{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.jujur li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px;font-size:1.02rem}
+@media (max-width:860px){.jujur{grid-template-columns:1fr}}
+.back{display:inline-flex;gap:6px;align-items:center;font-weight:700;text-decoration:none;color:var(--biru)}
+</style>
+
+<!-- ============ HEADER ============ -->
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#beranda" aria-label="Sekolah Bisnis Digital, ke beranda">
+      <span class="logo-box"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAIAAAAiOjnJAAB3DklEQVR42u19d5xdZZn/8zzvOef2KXd6y6QX0giBkFCkdwQBKSKLIvwUXQuya9tVFBFXd9eythUR+yoWQBQQkCqBCJiQkN6TyfR6Z+bWc877PL8/3nvvTBqkTRI05zPwSSYz995zzvc89ft8HxQROHYcOw71QccuwbHjGLCOHceAdew4Bqxjx7HjGLCOHceAdez4Bz6sY5dg96NYghldixERRCz+1fx59HeOHaMPPFbHklEHIiIi0X4YcmYe/bvmOAasf1BgiYgBBBHtDiNmTiaT6XQ6l8tprUVkcHDQ8zyncAQCgVAoFA6HI5HI7i9ufsUA9B8WZP9AwDJ2hZmVUqPvdyqVamlpWb9+/ebNmzds2NDa2trR0ZFIJIaHh0WkvLy8sbGxt7d31apVRKSUsizLcZxgMBiNRqurqxsbG5ubm6dNmzZhwoTJkyfX19fbtr2LPdtfK3gMWG+Ng5mZ2bJGAsrOzs4VK1a8+uqrr7zyyuuvv759+/a9/W5lZWVjY2NdXd0rr7zS19eH+EZXLBgMTpw4cd68eQsWLFiwYMHMmTNjsdhoG/mPg7C/Z2AV7VPRQy1fvvz555//85///Morr/T39xd/srm5OZFIDA4Omr8ak2M8WigUqqurmzhxYi6Xe/HFF7XWo98iEomMHz9+zpw50Wh01apVmzZt6unpKf7r+PHjFy1adN55573tbW+bNGnSaBv2d+8l/z6BZW5eEVJLly595JFHHn300VdffbVoWubNm7dw4cKTTjpp1qxZkyZNamtre/zxxx9//PGXXnopkUgUUz9ELC0traioaGxsfP311wcHBxsbG+fMmTNnzpx58+bNmjVrwoQJjuOYn+/v79+wYcOKFSteeeWVF198cf369eb7oVDozDPPvPTSSy+++OLx48cXgf53DK+/N2BprYvuprOz8+GHH77//vufe+4586+NjY3nnHPOeeedt2jRookTJ+7xFVpaWp555pnHHnvsueee6+3tJaLx48efcsopixYtmjx5cnV19cSJE4sObo84Nkcmk1m7du0LL7zw1FNPPffcc8lkEgBisdgll1xy/fXXn3feecFgcJcP/HebbL+lD621cV4isnz58ttuu622ttacY21t7c033/zHP/5xYGBg9K/4vu/7vtaambXWnucVX0FEvvzlLwPAySef3Nvbu/t7eZ5X/N3i95nZ933zT6N/ftu2bffdd98ll1xStG1z5sz52te+1t7eXvwko9/67+CAvzNILV68+LrrrivmZeeee+6Pf/zjrq6uPYJpb69mqgy33347AFx//fUiYrDyxr+4y1EE6+ifX7t27V133TVz5swi4j/96U9v2bKl+Nn28cWPAWtsD2MhzJ+XLFly7bXXFmPq973vfYsXL94FT/t42wxML730UgC47bbbRr/LAUN/9LunUqnf/OY3F1xwgfm05eXln/zkJ7dv3178qMeAdSSP4g3YsGHD+973PhPilJWV/cu//MvatWtHI2+/zID5Ydd158yZAwD/+7//ewhvtkFY8a/PPvvslVdeWbReX/7yl4eGhorW7hiwjpihGh4evuuuu8rLy42Vuu222zZv3rzHW7i/wOrv729sbASAJ5544pBbkV3g/uyzzxrrCACzZs26//77/w5MF7x1DdXjjz8+b948cz+uvfbaFStWHJJA2Pzu8uXLbdtWSpmXHSP7MfqjPvzwwwsWLDCnc/XVV2/cuPEtbbrgrYiq/v7+D3/4w+YezJs3749//OMhzK3MW/zhD38w7qmzs7NoxsbupMzrZzKZr3/965WVlabib7zwW9R0wVso9TNX/7nnnps9ezYABAKBO+64I5lM7pIYHhJg3XPPPQAwe/Zs13XHGli7oGf9+vXvfOc7zWNz1VVX7dix462YMMJby/195StfMaWEBQsWvPjii2PxQJtX++QnPwkAV1xxxdj5wTdOcu+7776qqirTF3rsscfectiCtwqqent7r776avMcf/zjHzeGapcq0aEyjSJiKhe33377gQKXRXwRZmE2f2ZftMfa16x91sy+sMfaY/ZFeI9lufXr15933nmms/Slu79U+Fe/+Aa7/OIxYO03qlauXGni9KqqqjFNmgxMfd9ftGgRAPzXf/2Xge+BvJTBk/a09veIgJFvsS++L8yjv2fOznXdz3z604b1deM/3TicHBQR1lrEZzmqo/qjmprs+75lWU899dQNN9zQ1dU1f/78n/zkJ7NmzTLt2116c4ew25hMJjs6OgBgwoQJB8Y/FhABAQ2oLALQXtLtWu62LoG+TZAZZM/FYIyDZYHqGVbTQqt6llKWAAB7iBYgAoBSyvd927b/6cYbf/LTn2az2Z/9/Gebt2359S9/Ud/Y7LO2iPEoHlmwjuZ2smVZ999//y233JJKpa644oof/vCH8XjcoG2MOBHmjm7btm3Hjh2mqpQ37Pvf20cgUeANbsks+1F2zR+oZx25HgMgAiIwAADkBJKhqKqfH5hzbXjOtejEkRkQwPyHJCLt7e0dHR1IaFvWiy8s/vPPPvlP73ufqj1PRCGK+Uk4NqWz77ZKKXXvvffecMMNqVTqgx/84G9/+9t4PG7QNhadeGMFiejee++98cYb58+f39DQ8NRTTyGiZVnGMe3TKwGA1oIE4A0t+cbgD071/ny33bXSVh6GyAorCikMKBVUKqgoZAV00t7yfO6hDw3cd25u3UNApAFBGEQABREbGhqCwaAwaS12IFiWXtv3yL/mtj2DCCIMIAAM4ALIMWDtk6367ne/+/73v19r/dnPfvZ73/seImqtx8L9+b6PiEqpxYsXX3TRRV/+8pfHjRs3ffr000477Qc/+MENN9ywdu1ay7IQ0Zi0N0CVDyCSE6V4uL37V9e6j95upzqtiAKbWBCEhTWwBtHC5ssXRAkoFVLU8drwr64ZfPJ21BmNCKKx8PGYmYBZNJEVsgKh7lWDD30yt+VpQCUiACRgH2W4OvqAZWzVD37wA1MC/Y//+I+77rrLkJYOOaoMHdSyrI6Ojttuu+36669PJBKLFi0KBoODg4Ou6x533HEtLS3vete7vvGNb3ieR0QmX9ubA1TaJwzooZb+X15mrXooELBZ2ZoZ8qZlz3Bk0aTZspVts/vcNxK//3/gZzSSMX+GrcUgEyZPPv744yvCIQQM9L3W//DHMzueBiRhPgpdIh2F0fovf/nLD33oQwDwla985dOf/vRYMC2N71NKmVroOeec86c//WnevHm1tbWJRCKTyfi+77ru0NBQZWVlU1PTD3/4w3e84x0vvfSSGcTYmaBcQIxoRMXpnv7fXme1LMWIrcUn8UHwTe8BI7AIsVhhW//t/xKPf0QhF1msrP1ISXT2CSeGbKspHsu6ogKWM7By4I+f8DqWIBEIH4ux3gRVTz755M0336y1vuOOOz71qU8dclQZSBn798ILL1xwwQV33nlndXX1tGnTMplMMpk0kHJd13Cwksmk67qTJk0aGBh473vf+5nPfCaRSCilzIBGIQVkEAFBIOl/8tO4ZQmFLNAegDBIIVJ/gxQSzE8yCLDvhJX7yo8Gl91DygIAFlBIuXT2j7/9dSLRTY4ggoekAnao67XuRz+V7VwKpITzmehOWD8GLBNXvf7669dff302m/3whz985513+r5/aFFVhFR7e/uHPvSha6+9tqOjY86cOURkfJ/nee7Oh/nO0NBQOBxubm5+4IEHLrjggocffthE+lprAARADR4Qpdb+Tv72k0BQafH3O5EEAQBGEYAQYu7pu92+dQCC7DOiqYtGIiFfBBlIGLXvWGS1vtD32Gd5YC0QCbAgg8DR4BfpKJl9IKLe3t7rr7++r68vFArddtttUpgtPrS+T2v93e9+98wzz3zkkUcmT54cj8cHBwez2ayhFI8+doFXJpNJp9ONjY1a6/e///033XRTa2urUkpYNPuItnjJ1AtfDwh7hCgH+LGVADCQUpToSC75BgACIQITIgCMqykLk2YGQQBEH6UEreDWp7qe+aJk2xEVCBSw9Q8PrGKh6Kabblq9ejURBYPBQCBwqFA12vc999xz55133h133BEKhZqamjKZTCqVMpBy9+HwPG94eNiyrClTpjzxxBOnnXbafffdh0RK2aA5vekxbH1VgkRay4HaDAESZI2sHHTX/A6ybaKCImBesLkmFvCHBUEAGQiERMhyWFb/bvC5L4M3ICbkx2PAAjCjf5///OcfeeSRQCDAzNFotKSk5JBIbhQh1dbWduutt1599dVbtmyZOHEiEQ0PD+/R942G0e42zPf9bDabTCabmpqCweAtt9zy9ksvXbnqdVIqt+6P5Isgwj7EVW9wPUzQhgSQ6Pc2/4lUQEBQBAACygc/KQgEQiAoKCgiEgI/++r/Df7tZwT+URJjWUc8tFJKPf7449/85jevvPLKFStWbN68ORqNmtGoQzJa6Pv+Pffcc/fddycSCTM1aiax3jzo2ROsi9/M5XKBQGDSpEmPPPro84sX3/nJj72nZBlZpmh5KAw5kmL2Nj2P005Xgj4RaG3rjPjZUT8jLIwojOT4ifRfvu6UNQVnXCnCR3xc0TqyTpCI2tvbP/vZz1566aWNjY1dXV2bN28uLy8vjknBwQ1AP/vss3fcccfixYsty5o4cWImk9lbFWpvd2Lvd0i01q7r2pYaHhz8/le/eOPtDlnAIocqKiQl0L+e3SGhAPspAIhHFfrpvKaSeTIRQIgALWVRsmXguW9UV062quaACBxR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" alt="Logo Sekolah Bisnis Digital"></span>
+      <span class="brand-name"><span class="sep" aria-hidden="true"></span><span><b>SEKOLAH BISNIS DIGITAL</b><small>Yayasan Citra Fatma · Lamongan</small></span></span>
+    </a>
+    <nav class="menu" aria-label="Menu utama">
+      <a href="#beranda" data-nav="beranda">Beranda</a>
+      <a href="#seleksi" data-nav="seleksi">Seleksi Dibuka</a>
+      <a class="btn btn-oranye" href="https://wa.me/6282246577074?text=Halo%20Sekolah%20Bisnis%20Digital%2C%20saya%20ingin%20bertanya%20tentang%20program%20sekolah%20berasrama%20untuk%20atlet%20sepak%20bola." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.02c-.24.68-1.42 1.31-1.96 1.36-.5.05-1.13.07-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.8-4.17-4.94-4.36-.14-.19-1.18-1.57-1.18-3 0-1.42.75-2.12 1.01-2.41.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.65.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.46.12.63-.07.17-.19.72-.84.92-1.13.19-.29.38-.24.65-.14.27.1 1.69.8 1.98.94.29.14.48.22.55.34.07.12.07.7-.17 1.38z"/></svg> Tanya via WA</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ======================= VIEW 1: WEBSITE ======================= -->
+<main class="view" id="v-beranda">
+
+  <section class="hero" aria-labelledby="h-hero">
+    <div class="pitch" aria-hidden="true">
+      <svg viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" fill="none" stroke="#fff" stroke-width="3">
+        <rect x="40" y="40" width="1120" height="520"/>
+        <line x1="600" y1="40" x2="600" y2="560"/>
+        <circle cx="600" cy="300" r="90"/>
+        <circle cx="600" cy="300" r="5" fill="#fff"/>
+        <rect x="40" y="170" width="150" height="260"/>
+        <rect x="40" y="240" width="55" height="120"/>
+        <rect x="1010" y="170" width="150" height="260"/>
+        <rect x="1105" y="240" width="55" height="120"/>
+        <path d="M190 245a70 70 0 0 1 0 110"/>
+        <path d="M1010 245a70 70 0 0 0 0 110"/>
+      </svg>
+    </div>
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">PKBM berasrama · Lamongan, Jawa Timur</p>
+        <h1 id="h-hero" style="margin-top:14px">Jadi atlet.<span class="o">Tetap berijazah.</span>Punya rencana B.</h1>
+        <p class="sub">Sekolah berasrama untuk remaja berbakat sepak bola. Latihan terjadwal, program Paket C setara SMA/SMK, dan kelas bisnis digital &amp; AI dalam satu tempat.</p>
+        <div class="ctas">
+          <a class="btn btn-oranye" href="#seleksi">Lihat seleksi murid baru</a>
+          <a class="btn btn-garis" href="https://wa.me/6282246577074?text=Halo%20Sekolah%20Bisnis%20Digital%2C%20saya%20ingin%20bertanya%20tentang%20program%20sekolah%20berasrama%20untuk%20atlet%20sepak%20bola." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.02c-.24.68-1.42 1.31-1.96 1.36-.5.05-1.13.07-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.8-4.17-4.94-4.36-.14-.19-1.18-1.57-1.18-3 0-1.42.75-2.12 1.01-2.41.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.65.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.46.12.63-.07.17-.19.72-.84.92-1.13.19-.29.38-.24.65-.14.27.1 1.69.8 1.98.94.29.14.48.22.55.34.07.12.07.7-.17 1.38z"/></svg> Tanya via WhatsApp</a>
+        </div>
+      </div>
+      <figure class="hero-foto">
+        <img src="img/latihan-lapangan.jpg" alt="Murid berlatih menggiring bola di lapangan sekolah" width="1280" height="720">
+        <img class="kecil" src="img/latihan-arahan.jpg" alt="Pelatih memberi arahan sebelum latihan" width="1280" height="720" loading="lazy">
+        <figcaption>SACI Soccer Class</figcaption>
+      </figure>
+    </div>
+    <div class="stripe" aria-hidden="true"><i></i><i></i><i></i></div>
+  </section>
+
+  <div class="facts">
+    <div class="wrap">
+      <div class="fact"><b>Lapangan sendiri</b><span>Latihan terjadwal tanpa menyewa tempat</span></div>
+      <div class="fact"><b>Paket C</b><span>Setara SMA/SMK, jadwal menyesuaikan latihan</span></div>
+      <div class="fact"><b>32 kursi</b><span>Per angkatan, supaya pembinaan tetap dekat</span></div>
+    </div>
+  </div>
+
+  <!-- TENTANG -->
+  <section class="blok" id="tentang" aria-labelledby="h-tentang">
+    <div class="wrap tentang">
+      <div style="display:grid;gap:16px">
+        <p class="eyebrow">Tentang kami</p>
+        <h2 id="h-tentang">Satu tempat untuk bola, belajar &amp; masa depan</h2>
+        <p class="lead">Sekolah Bisnis Digital adalah Pusat Kegiatan Belajar Masyarakat (PKBM) berasrama di bawah Yayasan Citra Fatma, Kabupaten Lamongan. Kami membina remaja berbakat sepak bola agar bisa fokus berlatih tanpa meninggalkan pendidikan.</p>
+        <figure class="foto"><img src="img/asrama-halaman.jpg" alt="Murid berkumpul melingkar di halaman gedung sekolah" width="1400" height="1050" loading="lazy" style="aspect-ratio:4/3"><figcaption>Murid berkumpul di halaman gedung sekolah.</figcaption></figure>
+      </div>
+      <div>
+        <div class="visi">
+          <p class="eyebrow">Visi</p>
+          <p>Melahirkan atlet sepak bola berprestasi, berijazah, dan siap mandiri di era digital.</p>
+        </div>
+        <ol class="misi" aria-label="Misi">
+          <li><b>1</b><span>Membina sepak bola secara terarah bersama pelatih berpengalaman.</span></li>
+          <li><b>2</b><span>Menyelenggarakan pendidikan Paket C yang fleksibel dan bermutu.</span></li>
+          <li><b>3</b><span>Membekali murid dengan teknologi digital &amp; AI untuk berwirausaha.</span></li>
+          <li><b>4</b><span>Membentuk disiplin dan karakter lewat kehidupan asrama.</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIGA PILAR -->
+  <section class="blok on-kabut" id="program" aria-labelledby="h-pilar">
+    <div class="wrap">
+      <div class="blok-head">
+        <p class="eyebrow">Program</p>
+        <h2 id="h-pilar">Tiga pilar, satu jadwal</h2>
+        <p class="lead">Anak tidak perlu memilih antara latihan dan sekolah. Semuanya diatur di satu lokasi.</p>
+      </div>
+      <div class="pilar-grid">
+        <article class="pilar" style="--c:var(--biru)">
+          <span class="no">01</span>
+          <figure class="foto"><img src="img/latihan-arahan.jpg" alt="Pelatih memberi arahan kepada murid sebelum latihan" width="1280" height="720" loading="lazy"></figure>
+          <h3>Sepak bola · SACI Soccer Class</h3>
+          <p>Kelas sepak bola kami, SACI Soccer Class. Latihan terjadwal di lapangan milik sendiri.</p>
+          <ul>
+            <li>1 pelatih kepala + 3 asisten pelatih</li>
+            <li>Pelatih kepala: mantan pemain timnas, lisensi C (persiapan menuju lisensi B)</li>
+          </ul>
+        </article>
+        <article class="pilar" style="--c:var(--oranye)">
+          <span class="no">02</span>
+          <h3>Akademik</h3>
+          <p>Program Paket C setara SMA/SMK.</p>
+          <ul>
+            <li>Ijazah pendidikan kesetaraan diakui setara pendidikan formal (UU Sisdiknas Pasal 26 ayat 6)</li>
+            <li>Jadwal belajar fleksibel, menyesuaikan latihan</li>
+          </ul>
+        </article>
+        <article class="pilar" style="--c:var(--hijau)">
+          <span class="no">03</span>
+          <h3>Bisnis digital &amp; AI</h3>
+          <p>Bekal “rencana B”, sudah termasuk dalam biaya bulanan.</p>
+          <ul>
+            <li>Perkembangan dunia digital</li>
+            <li>Kecerdasan buatan (AI)</li>
+            <li>Berbisnis dengan AI</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PELATIH & ASRAMA -->
+  <section class="blok" id="asrama" aria-labelledby="h-asrama">
+    <div class="wrap">
+      <div class="blok-head">
+        <p class="eyebrow">Pelatih &amp; asrama</p>
+        <h2 id="h-asrama">Tinggal, makan, latihan, belajar di satu lokasi</h2>
+      </div>
+      <div class="duo">
+        <div class="kartu">
+          <p class="angka-besar">1 + 3 <small>pelatih</small></p>
+          <dl>
+            <dt>Pelatih kepala</dt><dd>Mantan pemain timnas, lisensi C, persiapan menuju lisensi B</dd>
+            <dt>Asisten</dt><dd>3 asisten pelatih</dd>
+            <dt>Lapangan</dt><dd>Milik sendiri, di lokasi sekolah</dd>
+          </dl>
+        </div>
+        <div class="kartu">
+          <p class="angka-besar">32 <small>anak per angkatan</small></p>
+          <dl>
+            <dt>Asrama</dt><dd>Tinggal bersama teman satu tim</dd>
+            <dt>Makan</dt><dd>Disediakan setiap hari</dd>
+            <dt>Karakter</dt><dd>Disiplin dibentuk lewat kehidupan asrama</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEHIDUPAN DI SEKOLAH -->
+  <section class="blok" id="kegiatan" aria-labelledby="h-kegiatan">
+    <div class="wrap">
+      <div class="blok-head">
+        <p class="eyebrow">Kegiatan rutin sekolah &amp; asrama</p>
+        <h2 id="h-kegiatan">Hari-hari di luar lapangan</h2>
+        <p class="lead">Selain latihan dan belajar, murid menjalani kegiatan rutin di sekolah dan asrama: mengaji bersama, berkebun, berkuda, dan barongsai. Kegiatan ini melatih disiplin, tanggung jawab, dan kebersamaan.</p>
+      </div>
+      <div class="galeri">
+        <figure class="g1"><img src="img/mengaji.jpg" alt="Murid mengaji bersama ustaz di masjid" width="1280" height="960" loading="lazy"><figcaption>Mengaji bersama</figcaption></figure>
+        <figure class="g2"><img src="img/asrama-halaman.jpg" alt="Murid duduk melingkar mendengarkan pembina di halaman" width="1400" height="1050" loading="lazy"><figcaption>Arahan pembina</figcaption></figure>
+        <figure class="g3"><img src="img/berkebun.jpg" alt="Murid merawat dan mengamati kebun kangkung" width="1050" height="1400" loading="lazy"><figcaption>Berkebun</figcaption></figure>
+        <figure class="g4"><img src="img/berkuda.jpg" alt="Murid menunggang kuda di area sekolah" width="963" height="1280" loading="lazy"><figcaption>Berkuda</figcaption></figure>
+        <figure class="g5"><img src="img/barongsai.jpg" alt="Murid pemanasan sebelum latihan barongsai di aula" width="1400" height="1054" loading="lazy"><figcaption>Barongsai</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- UNTUK SIAPA -->
+  <section class="blok on-kabut" id="siapa" aria-labelledby="h-siapa">
+    <div class="wrap">
+      <div class="blok-head">
+        <p class="eyebrow">Untuk siapa</p>
+        <h2 id="h-siapa">Remaja berbakat sepak bola</h2>
+        <p class="lead">Lulusan SMP/sederajat usia 15–18 tahun yang serius ingin berkembang di sepak bola dan tetap menyelesaikan pendidikan setara SMA/SMK.</p>
+      </div>
+      <div class="cocok">
+        <div class="ya">
+          <h3>Cocok untuk anak yang</h3>
+          <ul>
+            <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#548235"/><path d="M5.5 10.5l3 3 6-6.5" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Lulusan SMP/sederajat, usia 15–18 tahun</span></li>
+            <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#548235"/><path d="M5.5 10.5l3 3 6-6.5" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Serius dan siap latihan rutin</span></li>
+            <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#548235"/><path d="M5.5 10.5l3 3 6-6.5" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Ingin tetap punya ijazah setara SMA/SMK</span></li>
+            <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#548235"/><path d="M5.5 10.5l3 3 6-6.5" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Siap hidup disiplin di asrama</span></li>
+          </ul>
+        </div>
+        <div class="tidak">
+          <h3>Kurang cocok jika</h3>
+          <ul>
+            <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#9DB0BB"/><path d="M6.5 6.5l7 7M13.5 6.5l-7 7" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg><span>Bermain bola hanya sebagai hobi</span></li>
+            <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#9DB0BB"/><path d="M6.5 6.5l7 7M13.5 6.5l-7 7" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg><span>Usia di bawah 15 atau di atas 18 tahun</span></li>
+            <li><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="10" fill="#9DB0BB"/><path d="M6.5 6.5l7 7M13.5 6.5l-7 7" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg><span>Mencari sekolah Paket C biasa tanpa program sepak bola</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALUR -->
+  <section class="blok on-blue" id="alur" aria-labelledby="h-alur">
+    <div class="wrap">
+      <div class="blok-head">
+        <p class="eyebrow">Alur pendaftaran</p>
+        <h2 id="h-alur">Empat langkah masuk asrama</h2>
+      </div>
+      <ol class="alur">
+        <li><span class="bola">1</span><div><h3>Daftar</h3><p>Hubungi kami lewat WhatsApp. Cara daftar dan berkas yang perlu disiapkan dijelaskan di sana.</p></div></li>
+        <li><span class="bola">2</span><div><h3>Seleksi</h3><p>Tes kemampuan sepak bola.</p></div></li>
+        <li><span class="bola">3</span><div><h3>Pengumuman</h3><p>Hasil seleksi disampaikan kepada orang tua.</p></div></li>
+        <li><span class="bola">4</span><div><h3>Masuk asrama</h3><p>Murid mulai tinggal, berlatih, dan belajar.</p></div></li>
+      </ol>
+      <p class="kuota"><i aria-hidden="true"></i>Kuota terbatas: 32 kursi per angkatan</p>
+    </div>
+  </section>
+
+  <!-- BIAYA & INFO ORTU -->
+  <section class="blok" id="biaya" aria-labelledby="h-biaya">
+    <div class="wrap">
+      <div class="blok-head">
+        <p class="eyebrow">Untuk orang tua</p>
+        <h2 id="h-biaya">Biaya jelas, informasi terbuka</h2>
+      </div>
+      <div class="biaya-grid">
+        <div class="biaya">
+          <p class="eyebrow">Biaya pendidikan</p>
+          <h3>Satu biaya bulanan</h3>
+          <ul class="termasuk">
+            <li>Asrama</li>
+            <li>Makan setiap hari</li>
+            <li>Program Paket C setara SMA/SMK</li>
+            <li>Kelas bisnis digital &amp; AI</li>
+            <li class="x">Jersey dibayar terpisah</li>
+          </ul>
+          <p>Rincian biaya diberikan saat konsultasi.</p>
+          <a class="btn btn-oranye" href="https://wa.me/6282246577074?text=Halo%20Sekolah%20Bisnis%20Digital%2C%20saya%20ingin%20tahu%20rincian%20biaya%20pendidikan%20dan%20apa%20saja%20yang%20sudah%20termasuk." target="_blank" rel="noopener" style="align-self:flex-start"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.02c-.24.68-1.42 1.31-1.96 1.36-.5.05-1.13.07-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.8-4.17-4.94-4.36-.14-.19-1.18-1.57-1.18-3 0-1.42.75-2.12 1.01-2.41.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.65.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.46.12.63-.07.17-.19.72-.84.92-1.13.19-.29.38-.24.65-.14.27.1 1.69.8 1.98.94.29.14.48.22.55.34.07.12.07.7-.17 1.38z"/></svg> Tanya rincian biaya</a>
+        </div>
+        <div class="info-ortu">
+          <p class="eyebrow">Info penting untuk orang tua</p>
+          <ul>
+            <li><span class="tag ok">Terdaftar</span><span>Lembaga terdaftar sebagai PKBM di bawah Yayasan Citra Fatma.</span></li>
+            <li><span class="tag proses">Proses</span><span>Akreditasi lembaga sedang dalam proses.</span></li>
+            <li><span class="tag info">Kuliah</span><span>Lulusan Paket C dapat kuliah lewat jalur SNBT atau Mandiri. Jalur SNBP (rapor) tidak tersedia untuk Paket C.</span></li>
+            <li><span class="tag info">Ijazah</span><span>Ijazah pendidikan kesetaraan diakui setara pendidikan formal (UU Sisdiknas Pasal 26 ayat 6).</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="blok on-kabut" id="tanya" aria-labelledby="h-tanya">
+    <div class="wrap">
+      <div class="blok-head">
+        <p class="eyebrow">Tanya jawab</p>
+        <h2 id="h-tanya">Yang sering ditanyakan orang tua</h2>
+      </div>
+      <div class="faq">
+        <details><summary>Apakah ijazah Paket C sah?</summary><div class="jawab"><p>Ya. Hasil pendidikan kesetaraan (Paket C) diakui setara dengan pendidikan formal SMA/SMK, sesuai UU Sisdiknas Pasal 26 ayat 6. Akreditasi lembaga kami saat ini sedang dalam proses.</p></div></details>
+        <details><summary>Apakah lulusan bisa kuliah?</summary><div class="jawab"><p>Bisa, lewat jalur SNBT atau jalur Mandiri. Jalur SNBP (berdasarkan nilai rapor) tidak tersedia untuk lulusan Paket C.</p></div></details>
+        <details><summary>Apakah sekolah bentrok dengan jadwal latihan?</summary><div class="jawab"><p>Tidak. Jadwal belajar Paket C dibuat fleksibel dan menyesuaikan jadwal latihan. Latihan, asrama, dan kelas ada di satu lokasi, jadi anak tidak perlu bolak-balik.</p></div></details>
+        <details><summary>Apakah anak saya pasti jadi pemain profesional?</summary><div class="jawab"><p>Kami tidak menjanjikan itu, dan sekolah mana pun sebaiknya tidak menjanjikannya. Yang kami berikan: latihan terjadwal bersama pelatih berpengalaman, ijazah setara SMA/SMK, dan bekal bisnis digital &amp; AI. Karena itu anak tetap punya rencana B.</p></div></details>
+        <details><summary>Berapa biayanya?</summary><div class="jawab"><p>Biaya bulanan sudah mencakup asrama, makan, program Paket C, dan kelas bisnis digital &amp; AI. Jersey dibayar terpisah. Rincian lengkap kami berikan saat konsultasi lewat WhatsApp.</p></div></details>
+        <details><summary>Apa saja kegiatan di luar latihan bola?</summary><div class="jawab"><p>Murid mengikuti kegiatan rutin di sekolah dan asrama: mengaji bersama, berkebun, berkuda, dan barongsai.</p></div></details>
+        <details><summary>Apa itu SACI Soccer Class?</summary><div class="jawab"><p>SACI Soccer Class adalah nama kelas sepak bola di Sekolah Bisnis Digital. Seragam latihan bertuliskan SACI adalah seragam murid kami.</p></div></details>
+        <details><summary>Berapa banyak murid yang diterima?</summary><div class="jawab"><p>32 kursi per angkatan.</p></div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOKASI -->
+  <section class="blok" id="lokasi" aria-labelledby="h-lokasi">
+    <div class="wrap lokasi">
+      <div style="display:grid;gap:14px;align-content:start">
+        <p class="eyebrow">Lokasi</p>
+        <h2 id="h-lokasi">Datang dan lihat langsung</h2>
+        <p class="lead">Jalan Masrik, Desa Tanjung, Kec. Lamongan, Kab. Lamongan, Jawa Timur.</p>
+        <p>Penyelenggara: <b>Yayasan Citra Fatma</b></p>
+      </div>
+      <div class="peta">
+        <svg class="bg" viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none">
+          <path d="M-10 170 C80 150 140 190 220 160 S360 120 420 140" stroke="#D5E0E7" stroke-width="14"/>
+          <path d="M120 -10 L160 260" stroke="#D5E0E7" stroke-width="10"/>
+          <path d="M300 -10 C280 80 320 160 290 260" stroke="#D5E0E7" stroke-width="8"/>
+          <rect x="190" y="60" width="70" height="44" rx="4" fill="#548235" opacity=".25"/>
+          <path d="M225 40c-12 0-20 9-20 20 0 15 20 34 20 34s20-19 20-34c0-11-8-20-20-20z" fill="#EB8A1A"/>
+          <circle cx="225" cy="60" r="7" fill="#fff"/>
+        </svg>
+        <a class="btn btn-oranye" href="https://www.google.com/maps/search/?api=1&amp;query=Jalan+Masrik+Desa+Tanjung+Lamongan" target="_blank" rel="noopener">Buka di Google Maps</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAWAH -->
+  <section class="cta-akhir" aria-labelledby="h-cta">
+    <div class="wrap">
+      <div>
+        <h2 id="h-cta">Ada pertanyaan? Chat kami.</h2>
+        <p>Tanyakan biaya, jadwal seleksi, atau minta jadwal berkunjung ke asrama. Kami jawab lewat WhatsApp.</p>
+      </div>
+      <div class="nomor">
+        <a class="btn btn-wa" href="https://wa.me/6282246577074?text=Halo%20Sekolah%20Bisnis%20Digital%2C%20saya%20ingin%20bertanya%20tentang%20program%20sekolah%20berasrama%20untuk%20atlet%20sepak%20bola." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.02c-.24.68-1.42 1.31-1.96 1.36-.5.05-1.13.07-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.8-4.17-4.94-4.36-.14-.19-1.18-1.57-1.18-3 0-1.42.75-2.12 1.01-2.41.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.65.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.46.12.63-.07.17-.19.72-.84.92-1.13.19-.29.38-.24.65-.14.27.1 1.69.8 1.98.94.29.14.48.22.55.34.07.12.07.7-.17 1.38z"/></svg> Chat WhatsApp</a>
+        <p class="salin">0822-4657-7074 <button type="button" data-copy="082246577074">Salin</button></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ======================= VIEW 2: LANDING PAGE SELEKSI ======================= -->
+<main class="view" id="v-seleksi" hidden>
+  <section class="lp-hero" aria-labelledby="h-lp">
+    <div class="pitch" aria-hidden="true">
+      <svg viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" fill="none" stroke="#fff" stroke-width="3">
+        <rect x="40" y="40" width="1120" height="520"/><line x1="600" y1="40" x2="600" y2="560"/><circle cx="600" cy="300" r="90"/>
+        <rect x="1010" y="170" width="150" height="260"/><rect x="1105" y="240" width="55" height="120"/><path d="M1010 245a70 70 0 0 0 0 110"/>
+      </svg>
+    </div>
+    <div class="wrap">
+      <div>
+        <span class="pita">Seleksi murid baru</span>
+        <h1 id="h-lp">Seleksi <span>dibuka</span></h1>
+        <p class="sub">Untuk lulusan SMP usia 15–18 tahun. Latihan sepak bola, Paket C setara SMA/SMK, dan kelas bisnis digital &amp; AI di satu asrama.</p>
+        <div class="chips"><span>Lulusan SMP</span><span>15–18 tahun</span><span>32 kursi</span><span>Lamongan, Jatim</span></div>
+      </div>
+      <form class="formulir" id="form-daftar" novalidate>
+        <h2>Daftar seleksi via WhatsApp</h2>
+        <p class="kecil">Isi singkat, lalu tekan tombol hijau. Pesan sudah tersusun rapi, tinggal kirim di WhatsApp.</p>
+        <div class="field"><label for="f-ortu">Nama orang tua/wali</label><input id="f-ortu" name="ortu" autocomplete="name" placeholder="Contoh: Bapak Hendra"></div>
+        <div class="field"><label for="f-anak">Nama anak</label><input id="f-anak" name="anak" placeholder="Nama lengkap anak"></div>
+        <div class="dua">
+          <div class="field"><label for="f-usia">Usia anak</label>
+            <select id="f-usia" name="usia"><option value="">Pilih</option><option>15 tahun</option><option>16 tahun</option><option>17 tahun</option><option>18 tahun</option></select></div>
+          <div class="field"><label for="f-posisi">Posisi bermain</label>
+            <select id="f-posisi" name="posisi"><option value="">Pilih</option><option>Kiper</option><option>Bek</option><option>Gelandang</option><option>Penyerang</option><option>Belum tahu</option></select></div>
+        </div>
+        <div class="field"><label for="f-kota">Asal kota</label><input id="f-kota" name="kota" placeholder="Contoh: Gresik"></div>
+        <div class="field"><label for="f-klub">Klub/SSB saat ini (jika ada)</label><input id="f-klub" name="klub" placeholder="Boleh dikosongkan"></div>
+        <a class="btn btn-wa" id="kirim-wa" data-wa="daftar" href="https://wa.me/6282246577074?text=Halo%20Sekolah%20Bisnis%20Digital%2C%20saya%20ingin%20mendaftarkan%20anak%20saya%20untuk%20seleksi%20murid%20baru.%0A%0AMohon%20info%20jadwal%20seleksi%2C%20berkas%2C%20dan%20rincian%20biayanya.%20Terima%20kasih." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.02c-.24.68-1.42 1.31-1.96 1.36-.5.05-1.13.07-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.8-4.17-4.94-4.36-.14-.19-1.18-1.57-1.18-3 0-1.42.75-2.12 1.01-2.41.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.65.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.46.12.63-.07.17-.19.72-.84.92-1.13.19-.29.38-.24.65-.14.27.1 1.69.8 1.98.94.29.14.48.22.55.34.07.12.07.7-.17 1.38z"/></svg> Kirim ke WhatsApp</a>
+        <div class="pratinjau" id="pratinjau" aria-live="polite"></div>
+        <p class="kecil">WhatsApp: <b>0822-4657-7074</b> <button type="button" class="salin-kecil" data-copy="082246577074" style="font:inherit;font-size:.8rem;font-weight:700;border:0;border-radius:5px;padding:3px 8px;background:var(--biru);color:#fff;cursor:pointer">Salin</button></p>
+      </form>
+    </div>
+    <div class="stripe" aria-hidden="true"><i></i><i></i><i></i></div>
+  </section>
+
+  <section class="blok" aria-labelledby="h-dapat">
+    <div class="wrap">
+      <div class="blok-head">
+        <p class="eyebrow">Yang anak dapatkan</p>
+        <h2 id="h-dapat">Satu biaya bulanan, empat kebutuhan</h2>
+      </div>
+      <div class="dapat">
+        <div style="--c:var(--biru)"><h3>Latihan terjadwal</h3><p>Di SACI Soccer Class, lapangan milik sendiri, bersama 1 pelatih kepala (mantan pemain timnas, lisensi C) dan 3 asisten.</p></div>
+        <div style="--c:var(--oranye)"><h3>Ijazah setara SMA</h3><p>Program Paket C dengan jadwal belajar yang menyesuaikan latihan.</p></div>
+        <div style="--c:var(--hijau)"><h3>Bisnis digital &amp; AI</h3><p>Dunia digital, kecerdasan buatan, dan berbisnis dengan AI.</p></div>
+        <div style="--c:var(--biru2)"><h3>Asrama &amp; kegiatan</h3><p>Tinggal bersama teman satu tim, makan setiap hari, plus mengaji, berkebun, berkuda, dan barongsai.</p></div>
+      </div>
+      <div class="lp-foto">
+        <figure class="foto"><img src="img/latihan-lapangan.jpg" alt="Murid berlatih di lapangan sekolah" width="1280" height="720" loading="lazy"><figcaption>Latihan SACI Soccer Class</figcaption></figure>
+        <figure class="foto"><img src="img/mengaji.jpg" alt="Murid mengaji bersama di masjid" width="1280" height="960" loading="lazy"><figcaption>Mengaji bersama</figcaption></figure>
+        <figure class="foto"><img src="img/asrama-halaman.jpg" alt="Murid berkumpul di halaman gedung sekolah" width="1400" height="1050" loading="lazy"><figcaption>Kebersamaan di asrama</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="blok on-blue" aria-labelledby="h-lp-alur">
+    <div class="wrap">
+      <div class="blok-head">
+        <p class="eyebrow">Alur seleksi</p>
+        <h2 id="h-lp-alur">Dari daftar sampai masuk asrama</h2>
+      </div>
+      <ol class="alur">
+        <li><span class="bola">1</span><div><h3>Daftar</h3><p>Kirim data lewat formulir di atas. Kami balas dengan daftar berkas.</p></div></li>
+        <li><span class="bola">2</span><div><h3>Seleksi</h3><p>Tes kemampuan sepak bola. Jadwal dikabari lewat WhatsApp.</p></div></li>
+        <li><span class="bola">3</span><div><h3>Pengumuman</h3><p>Hasil disampaikan kepada orang tua.</p></div></li>
+        <li><span class="bola">4</span><div><h3>Masuk asrama</h3><p>Murid mulai tinggal, berlatih, dan belajar.</p></div></li>
+      </ol>
+      <p class="kuota"><i aria-hidden="true"></i>Kuota 32 kursi per angkatan</p>
+    </div>
+  </section>
+
+  <section class="blok" aria-labelledby="h-jujur">
+    <div class="wrap jujur">
+      <blockquote id="h-jujur">Kami tidak menjanjikan anak pasti jadi pemain timnas. <span>Kami menjanjikan jalan yang jelas.</span></blockquote>
+      <ul>
+        <li><span class="tag ok">Terdaftar</span><span>Lembaga terdaftar sebagai PKBM, di bawah Yayasan Citra Fatma.</span></li>
+        <li><span class="tag proses">Proses</span><span>Akreditasi lembaga sedang dalam proses.</span></li>
+        <li><span class="tag info">Kuliah</span><span>Lulusan Paket C dapat kuliah lewat SNBT atau Mandiri, tidak lewat SNBP.</span></li>
+        <li><span class="tag info">Biaya</span><span>Mencakup asrama, makan, Paket C, kelas digital &amp; AI. Jersey terpisah. Rincian saat konsultasi.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cta-akhir" aria-labelledby="h-lp-cta">
+    <div class="wrap">
+      <div>
+        <h2 id="h-lp-cta">Amankan satu dari 32 kursi</h2>
+        <p>Chat kami untuk jadwal seleksi, berkas, dan rincian biaya. Mau lihat asrama dulu? Minta jadwal berkunjung.</p>
+        <p style="margin-top:16px"><a class="back" href="#beranda">← Kenali sekolah kami lebih lengkap</a></p>
+      </div>
+      <div class="nomor">
+        <a class="btn btn-wa" data-wa="daftar" href="https://wa.me/6282246577074?text=Halo%20Sekolah%20Bisnis%20Digital%2C%20saya%20ingin%20mendaftarkan%20anak%20saya%20untuk%20seleksi%20murid%20baru.%0A%0AMohon%20info%20jadwal%20seleksi%2C%20berkas%2C%20dan%20rincian%20biayanya.%20Terima%20kasih." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.02c-.24.68-1.42 1.31-1.96 1.36-.5.05-1.13.07-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.8-4.17-4.94-4.36-.14-.19-1.18-1.57-1.18-3 0-1.42.75-2.12 1.01-2.41.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.65.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.46.12.63-.07.17-.19.72-.84.92-1.13.19-.29.38-.24.65-.14.27.1 1.69.8 1.98.94.29.14.48.22.55.34.07.12.07.7-.17 1.38z"/></svg> Daftar via WhatsApp</a>
+        <p class="salin">0822-4657-7074 <button type="button" data-copy="082246577074">Salin</button></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><b>Sekolah Bisnis Digital</b><br>PKBM berasrama · Yayasan Citra Fatma</div>
+    <div>Jalan Masrik, Desa Tanjung, Kec. Lamongan,<br>Kab. Lamongan, Jawa Timur</div>
+    <div>WhatsApp <b>0822-4657-7074</b></div>
+  </div>
+</footer>
+
+<a class="wa-float" id="wa-float" href="https://wa.me/6282246577074?text=Halo%20Sekolah%20Bisnis%20Digital%2C%20saya%20ingin%20bertanya%20tentang%20program%20sekolah%20berasrama%20untuk%20atlet%20sepak%20bola." target="_blank" rel="noopener" aria-label="Chat WhatsApp Sekolah Bisnis Digital"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.02c-.24.68-1.42 1.31-1.96 1.36-.5.05-1.13.07-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.8-4.17-4.94-4.36-.14-.19-1.18-1.57-1.18-3 0-1.42.75-2.12 1.01-2.41.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.65.5.24.58.82 2 .89 2.15.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.46.12.63-.07.17-.19.72-.84.92-1.13.19-.29.38-.24.65-.14.27.1 1.69.8 1.98.94.29.14.48.22.55.34.07.12.07.7-.17 1.38z"/></svg><span>Chat WA</span></a>
+
+<script>
+(function(){
+  var NOMOR = "6282246577074";
+  function waLink(teks){ return "https://wa.me/" + NOMOR + "?text=" + encodeURIComponent(teks); }
+
+  /* --- routing: #beranda (website) dan #seleksi (landing page) --- */
+  var vBeranda = document.getElementById("v-beranda");
+  var vSeleksi = document.getElementById("v-seleksi");
+  var sectionsBeranda = ["tentang","program","asrama","kegiatan","siapa","alur","biaya","tanya","lokasi"];
+  function tampil(){
+    var h = (location.hash || "").replace("#","");
+    var seleksi = h === "seleksi";
+    vSeleksi.hidden = !seleksi;
+    vBeranda.hidden = seleksi;
+    document.querySelectorAll("[data-nav]").forEach(function(a){
+      a.classList.toggle("is-on", a.getAttribute("data-nav") === (seleksi ? "seleksi" : "beranda"));
+    });
+    document.getElementById("wa-float").href = seleksi ? linkDaftar() : waLink(PESAN_UMUM);
+    if (seleksi || h === "beranda" || h === "") { window.scrollTo(0,0); }
+    else if (sectionsBeranda.indexOf(h) > -1) {
+      var el = document.getElementById(h); if (el) el.scrollIntoView();
+    }
+  }
+
+  var PESAN_UMUM = "Halo Sekolah Bisnis Digital, saya ingin bertanya tentang program sekolah berasrama untuk atlet sepak bola.";
+
+  /* --- formulir -> pesan WhatsApp --- */
+  var ids = ["f-ortu","f-anak","f-usia","f-posisi","f-kota","f-klub"];
+  function nilai(id){ var el=document.getElementById(id); return el ? el.value.trim() : ""; }
+  function susunPesan(){
+    var b = ["Halo Sekolah Bisnis Digital, saya ingin mendaftarkan anak saya untuk seleksi murid baru."];
+    var data = [
+      ["Nama orang tua/wali", nilai("f-ortu")],
+      ["Nama anak", nilai("f-anak")],
+      ["Usia", nilai("f-usia")],
+      ["Posisi", nilai("f-posisi")],
+      ["Asal kota", nilai("f-kota")],
+      ["Klub/SSB", nilai("f-klub")]
+    ].filter(function(r){return r[1];});
+    if (data.length){ b.push(""); data.forEach(function(r){ b.push(r[0] + ": " + r[1]); }); }
+    b.push(""); b.push("Mohon info jadwal seleksi, berkas, dan rincian biayanya. Terima kasih.");
+    return b.join("\n");
+  }
+  function linkDaftar(){ return waLink(susunPesan()); }
+  function perbarui(){
+    var link = linkDaftar();
+    document.querySelectorAll('a[data-wa="daftar"]').forEach(function(a){ a.href = link; });
+    var p = document.getElementById("pratinjau");
+    if (p) p.textContent = "Pesan yang akan terkirim:\n" + susunPesan();
+    if (!vSeleksi.hidden) document.getElementById("wa-float").href = link;
+  }
+  ids.forEach(function(id){
+    var el = document.getElementById(id);
+    if (el){ el.addEventListener("input", perbarui); el.addEventListener("change", perbarui); }
+  });
+  document.getElementById("form-daftar").addEventListener("submit", function(e){ e.preventDefault(); });
+
+  /* --- tombol salin nomor --- */
+  document.querySelectorAll("[data-copy]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var teks = btn.getAttribute("data-copy");
+      var asli = btn.textContent;
+      function ok(){ btn.textContent = "Tersalin"; setTimeout(function(){ btn.textContent = asli; }, 1600); }
+      try {
+        navigator.clipboard.writeText(teks).then(ok, function(){ pilih(btn.parentNode); });
+      } catch(e){ pilih(btn.parentNode); }
+    });
+  });
+  function pilih(el){
+    try { var r=document.createRange(); r.selectNodeContents(el); var s=window.getSelection(); s.removeAllRanges(); s.addRange(r); } catch(e){}
+  }
+
+  window.addEventListener("hashchange", tampil);
+  perbarui();
+  tampil();
+})();
+</script>
+
+</body>
+</html>
